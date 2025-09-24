@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당신만의 헬퍼</title>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #6EE7B7, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .speech-bubble {
+            position: relative;
+            background-color: #238636;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+        .speech-bubble:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+        .speech-bubble.left:before {
+            border-width: 10px 10px 0 0;
+            border-color: transparent #238636 transparent transparent;
+            bottom: -10px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white">
+    <div class="container mx-auto px-4 py-12 md:py-24 max-w-7xl">
+
+        <!-- SECTION 1: 헤드라인 -->
+        <section id="headline" class="text-center mb-16 md:mb-24">
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                당신의 이야기 속에서 <br class="md:hidden">
+                <span class="text-gradient">가장 빛나는 길</span>을 비춰드립니다.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+                지쳐있는 당신의 마음을 누구보다 잘 압니다. 이제 혼자 고민하지 마세요. <br class="hidden md:inline">
+                N년차 현직 선배가 '당신만의 헬퍼'가 되어드릴게요.
+            </p>
+        </section>
+
+        <!-- SECTION 2: 공감대 형성 및 해결책 제시 -->
+        <section id="empathy" class="mb-16 md:mb-24">
+            <div class="card p-8 md:p-12">
+                <blockquote class="text-xl md:text-2xl font-semibold border-l-4 border-blue-500 pl-4 mb-8 text-gray-200">
+                    "어디서부터 다시 시작해야 할지, 모든 것이 막막하기만 했습니다."
+                </blockquote>
+                <p class="text-gray-400 mb-6">
+                    저 역시 끝이 보이지 않는 터널 속을 혼자 걷는 기분이었습니다. 유튜브와 현직자 인터뷰는 넘쳐났지만, 정작 '내 상황'에 맞는 현실적인 조언을 찾기란 하늘의 별 따기였죠.
+                </p>
+                <div class="bg-gray-800 rounded-lg p-6 mb-8 border border-gray-700">
+                    <div class="flex items-start mb-4">
+                        <span class="mr-4 text-2xl">💬</span>
+                        <div class="speech-bubble bg-green-600 rounded-lg px-4 py-2 text-sm text-white">
+                            자소서는 도대체 어떻게 쓰는 걸까?
+                        </div>
+                    </div>
+                    <div class="flex items-end justify-end mb-4">
+                        <div class="speech-bubble bg-green-600 rounded-lg px-4 py-2 text-sm text-white">
+                            직무 관련 경험이 없는 것 같은데 어떡하지...
+                        </div>
+                        <span class="ml-4 text-2xl">👤</span>
+                    </div>
+                    <p class="text-gray-400 mt-6">
+                        당장 눈앞의 기술적인 문제부터 막막했고, '쓸 게 없다'는 생각에 한없이 작아졌습니다.
+                    </p>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="flex items-end justify-end mb-4">
+                        <div class="speech-bubble bg-green-600 rounded-lg px-4 py-2 text-sm text-white">
+                            어떤 직무가 정말 나랑 맞을까?
+                        </div>
+                        <span class="ml-4 text-2xl">💬</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="mr-4 text-2xl">👤</span>
+                        <div class="speech-bubble bg-green-600 rounded-lg px-4 py-2 text-sm text-white">
+                            이 직무의 5년 뒤 커리어패스는 어떻게 될까?
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mt-6">
+                        와 같은 더 근본적인 질문 앞에선, 누구에게도 쉽게 입을 뗄 수 없었습니다.
+                    </p>
+                </div>
+                <p class="text-gray-400 mt-8">
+                    그때 제가 간절히 바랐던 건, 정답을 알려주는 사람이 아니었습니다. 취업에 '정답'은 없으니까요.
+                </p>
+                <p class="text-gray-400 mt-4">
+                    섣부른 평가나 일반적인 조언 대신, 제 이야기를 진심으로 들어주고 함께 고민하며 '나만의 길'을 찾아갈 수 있도록 곁에서 묵묵히 도와주는, 그런 든든한 선배가 필요했습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 3: 약속과 서비스 메뉴판 -->
+        <section id="services" class="mb-16 md:mb-24">
+            <div class="container mx-auto max-w-6xl text-center">
+                <div class="bg-gray-800 text-teal-400 inline-flex items-center gap-2 px-6 py-2 rounded-full mb-12 shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.72 21.053c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="font-bold tracking-wide">
+                        진심을 담기 위한 약속</span>
+                </div>
+                <p class="text-lg text-gray-400 mb-12">
+                    한 분 한 분에게 온전히 집중하기 위해, 하루에 단 '두 분'만 함께합니다.
+                </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 서비스 1: 커피챗 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-2">1. 커피챗: 나만의 길 찾기</h3>
+                    <p class="text-2xl font-extrabold text-blue-400 mb-4">가격: 무료 (30분)</p>
+                    <div class="text-sm border-t border-b border-gray-700 py-4 mb-4">
+                        <p class="font-bold text-gray-300 mb-2">추천 대상</p>
+                        <ul class="space-y-1">
+                            <li><span class="text-green-400 mr-2">✅</span>취업 준비의 첫걸음, 어디서부터 시작할지 막막한 분</li>
+                            <li><span class="text-green-400 mr-2">✅</span>내 고민을 편하게 털어놓고 방향성에 대한 조언을 얻고 싶은 분</li>
+                            <li><span class="text-green-400 mr-2">✅</span>본격적인 컨설팅 전, 헬퍼와 잘 맞을지 미리 경험해보고 싶은 분</li>
+                        </ul>
+                    </div>
+                    <p class="font-bold text-gray-300 mb-2">제공 내용</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                        <li>1:1 온라인(음성/채팅)을 통한 고민 진단 및 상담</li>
+                        <li>현재 상황 분석 및 단기 목표 설정</li>
+                        <li>맞춤형 취업 준비 로드맵 제시</li>
+                    </ul>
+                </div>
+
+                <!-- 서비스 2: 자소서 마스터피스 (주력) -->
+                <div class="card border-2 border-yellow-400 transform scale-105">
+                    <div class="flex items-center mb-2">
+                         <h3 class="text-xl font-bold">2. 자소서 마스터피스: 나만의 서사 만들기</h3>
+                         <span class="text-yellow-400 text-xl font-bold ml-2">⭐</span>
+                    </div>
+                    <p class="text-2xl font-extrabold text-yellow-400 mb-4">가격: 100,000원 (기업당)</p>
+                    <div class="bg-yellow-400 text-gray-900 font-bold px-4 py-3 rounded-xl mb-6 flex items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6a.75.75 0 0 0 .75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                        </svg>
+                        24시간 내 초안 발송
+                    </div>
+                    <div class="text-sm border-t border-b border-gray-700 py-4 mb-4">
+                        <p class="font-bold text-gray-300 mb-2">추천 대상</p>
+                        <ul class="space-y-1">
+                            <li><span class="text-green-400 mr-2">✅</span>사소한 경험을 직무 역량으로 포장하고 싶은 분</li>
+                            <li><span class="text-green-400 mr-2">✅</span>지원할 기업에 딱 맞는 '합격 자소서'가 필요한 분</li>
+                            <li><span class="text-green-400 mr-2">✅</span>다 썼지만 합격할 자신이 없는 자소서를 뒤엎고 싶은 분</li>
+                        </ul>
+                    </div>
+                    <p class="font-bold text-gray-300 mb-2">제공 내용</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                        <li>1:1 심층 인터뷰(60분)를 통한 경험 재정의</li>
+                        <li>직무 맞춤형 스토리라인 설계 및 초안 완성</li>
+                        <li>최종 제출 전까지 무제한 피드백</li>
+                    </ul>
+                    <div class="bg-gray-800 rounded-lg p-4 mt-4 text-xs">
+                        <p class="font-bold text-gray-300 mb-1">⭐ (+50,000원) 경험 재구성 및 완성</p>
+                        <p class="text-gray-400">
+                            막막했던 경험의 '재료'를 '맞춤형 성공 경험'으로 재발견하고, 합격 자소서의 '완성된 문단'으로 만들어 드립니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 서비스 3: 면접 헬퍼 -->
+                <div class="card">
+                    <h3 class="text-xl font-bold mb-2">3. 면접 헬퍼: 나만의 목소리 찾기</h3>
+                    <p class="text-2xl font-extrabold text-blue-400 mb-4">가격: 50,000원 (기업당)</p>
+                    <div class="text-sm border-t border-b border-gray-700 py-4 mb-4">
+                        <p class="font-bold text-gray-300 mb-2">추천 대상</p>
+                        <ul class="space-y-1">
+                            <li><span class="text-green-400 mr-2">✅</span>서류 합격 후, 면접 준비 과정이 막막한 분</li>
+                            <li><span class="text-green-400 mr-2">✅</span>예상치 못한 질문에 머리가 하얘지는 경험을 하신 분</li>
+                            <li><span class="text-green-400 mr-2">✅</span>자신감 있는 태도와 논리적인 답변을 완성하고 싶은 분</li>
+                        </ul>
+                    </div>
+                    <p class="font-bold text-gray-300 mb-2">제공 내용</p>
+                    <ul class="list-disc list-inside text-gray-400 text-sm space-y-1">
+                        <li>자소서 기반 맞춤형 예상 질문 및 답변 스크립트 첨삭</li>
+                        <li>실전 1:1 모의 면접(40분) 진행</li>
+                        <li>영상 피드백을 통한 말투, 태도, 시선 처리 코칭</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- SECTION 4 & 5: 과정 및 마지막 CTA -->
+    <section class=" text-gray-800 py-20 px-6">
+        <div class="container mx-auto max-w-xl text-center">
+            <h2 class="text-3xl font-bold mb-12">‘나만의 길’을 찾아가는 여정</h2>
+            <div class="flex flex-col items-center gap-8">
+                <!-- STEP 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-2 shadow-md">1</div>
+                    <div class="text-lg font-semibold">STEP 1: 오픈채팅 문의</div>
+                    <p class="text-gray-500 text-sm">(여정의 시작)</p>
+                </div>
+                <div class="text-3xl font-bold text-gray-400 mb-4 animate-bounce">▼</div>
+                <!-- STEP 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-2 shadow-md">2</div>
+                    <div class="text-lg font-semibold">STEP 2: 1:1 심층 인터뷰</div>
+                    <p class="text-gray-500 text-sm">(서로를 알아가는 시간)</p>
+                </div>
+                <div class="text-3xl font-bold text-gray-400 mb-4 animate-bounce">▼</div>
+                <!-- STEP 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-2 shadow-md">3</div>
+                    <div class="text-lg font-semibold">STEP 3: 맞춤 코칭 진행</div>
+                    <p class="text-gray-500 text-sm">(함께 걷는 시간)</p>
+                </div>
+                <div class="text-3xl font-bold text-gray-400 mb-4 animate-bounce">▼</div>
+                <!-- STEP 4 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-900 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg mb-2 shadow-md">4</div>
+                    <div class="text-lg font-semibold">STEP 4: 최종 결과물 & 피드백</div>
+                    <p class="text-gray-500 text-sm">(성장의 확인)</p>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <p class="text-xl font-bold mb-4">당신의 이야기가, 당신의 합격입니다.</p>
+                <p class="text-lg text-gray-600 mb-8">혼자 고민하지 마세요.<br>당신의 첫걸음을 함께하겠습니다.</p>
+                <a href="#" class="inline-block bg-teal-500 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:bg-teal-600 transition-colors duration-300 transform hover:scale-105">
+                    👇 든든한 헬퍼에게 지금 바로 말 걸기 (익명) 👇
+                </a>
+            </div>
+        </div>
+    </section>
+
+       
+
+    <script>
+        const body = document.body;
+        const lightModeElements = document.querySelectorAll('[data-light-text]');
+
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            const totalScrollHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollRatio = totalScrollHeight > 0 ? scrollY / totalScrollHeight : 0;
+
+            // 배경색 전환: 검정(#000000) -> 흰색(#FFFFFF)
+            const startR = 0, startG = 0, startB = 0;
+            const endR = 255, endG = 255, endB = 255;
+
+            const newR = Math.round(startR + (endR - startR) * scrollRatio);
+            const newG = Math.round(startG + (endG - startG) * scrollRatio);
+            const newB = Math.round(startB + (endB - startB) * scrollRatio);
+
+            body.style.backgroundColor = `rgb(${newR}, ${newG}, ${newB})`;
+
+            // 스크롤 비율에 따라 테마 변경
+            if (scrollRatio > 0.5) {
+                body.setAttribute('data-theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>
